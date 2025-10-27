@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="greeting">Hello Nest</h1>
+    <div class="info-box" id="infoBox">
+        <p class="info">End medeelel garna</p>
+    </div>
+    <div>
+        <button id="changeBtn">Text uurchluh</button>  
+        <button id="AddBtn">Shine text nemeh</button>    
+        <button id="DeleteBtn">Suuliin text ustgah</button>
+    </div>
+    <script>
+        let boolean = false;
+        changeBtn.addEventListener("click", () =>{
+            if (boolean){
+                greeting.textContent = "Hello, Nest";
+                info.textContent = "End medeelel garna";
+                infoBox.style.background = "white";
+                boolean = false;
+                return;
+            } else{
+                greeting.textContent = "text amjilttai uurchlugdluu";
+                info.textContent = "css + Js hamt ashiglaj bn";
+                infoBox.style.background = "#e8f5e9";
+                boolean = true;
+            }
+        });
 
+        addBtn.addEventListener("mouseover", () =>{
+            const newP = document.createElement("p");
+        });
+    </script>
+</body>
+</html>
